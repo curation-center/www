@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- SEO Properties -->
+	<title>Steem Curation Center</title>
+	<meta name="description" content="Steem Curation Center provides software and networking support for curating content on the Steem Blockchain.">
+	<meta name="application-name" content="Steem Curation Center">
+    <meta name="keywords" content="steem, steem curation, steem rewards, steeming, steemit, steem blockchain, steem chain">
+	
+	<!-- Open graph properties -->
+	<meta property="og:site_name" content="Peer Query">
+	<meta property="og:title" content="Steem Curation Center">
+	<meta property="og:image" content="https://curation.center/assets/images/logo.png"/>
+	<meta property="og:description" content="Steem Curation Center provides software and networking support for curating content on the Steem Blockchain.">
+	
+	<!-- SEO robots -->
+	<meta name="robots" content="index, follow" />
+    
+	<!-- CSS files -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" />
+	
+	<!-- JS files -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+  <script>
+  $(document)
+    .ready(function() {
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item">Home</a>
+  <a class="item">App</a>
+  <a class="item">Network</a>
+  <a class="item">Project</a>
+  <a class="item">Digests</a>
+  <a class="item">Blog</a>
+  <a class="item">Edit site</a>
+  <a class="item">Join chat</a>
+  <a class="item">Open source</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" style="background-image: url('assets/images/background-cover.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item">Home</a>
+        <a class="item">App</a>
+        <a class="item">Network</a>
+        <a class="item">Digests</a>
+        <a class="item">Project</a>
+        <a class="item" href="https://steemit.com/@curation.center">Blog</a>
+        
+        <div class="right item">
+          <a class="ui inverted button" href="https://github.com/curation-center/www">Edit site</a>
+          <a class="ui inverted button" href="https://discord.gg/xeSnGc8">Join chat</a>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Welcome to the Center for Steem Curation
+      </h1>
+      <h2>We have everything you need to get your curation service up and running.</h2>
+      
+      <!--
+        <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      -->
+      
+      <br/>
+      <br/>
+      
+      <div>
+        <small>A project of the <a href="https://steem.institute" target="_blank">Steem Institute</a>. Photo by <a href="https://pixabay.com/en/human-observer-exhibition-2944065/" target="_blank">Geralt</a>.</small>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Use the free open source app</h3>
+          <p>The Curator app provides a UI, API, virtual office and an automated voting bot with extreme customization for your curation needs. Its MIT license means support for branding with themes (coming soon).</p>
+          <h3 class="ui header">Join the curation network</h3>
+          <p>With APIs pool from most of Curator apps, we provide a very powerful API to access and aggregate curation data from all connecting curator nodes.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="assets/images/logo.png" class="ui large bordered rounded image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button">Check Them Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui container">
+        
+        <h1 class="ui center aligned header" style="margin-bottom: 4rem; margin-top: -3rem">
+            Our users
+            <div class="sub header">See web apps, communities and services using our products</div>
+        </h1>
+        
+        
+        <div class="ui eight cards">
+            
+            <a class="red card" href="https://curation.peerquery.com">
+                <div class="image">
+                <img src="assets/images/peerquery-logo.png">
+                </div>
+            </a>
+            
+        </div>
+  
+    </div>
+  </div>
+  
+  
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3>Still wondering?</h3>
+          <p>It is all free to use and open sourced. You have nothing to loose.</p>
+        </div>
+        <div class="column">
+          <h3>"... the most powerful and complete solution for curation. I would recommend it for everyone."</h3>
+          <p>
+            <img src="" class="ui avatar image"> <b>Dzivenu</b>, developer of <b>Peer Query</b></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui container">
+        
+        <h1 class="ui center aligned header" style="margin-bottom: 4rem; margin-top: -3rem">
+            Our partners and supporters
+            <div class="sub header">Development and funding partners who have helped us reach this far</div>
+        </h1>
+        
+        
+        <div class="ui eight cards">
+            
+            <a class="red card" href="https://www.peerquery.com">
+                <div class="image">
+                <img src="assets/images/peerquery-logo.png">
+                </div>
+            </a>
+            
+            <a class="red card" href="https://utopian.io">
+                <div class="image">
+                <img src="assets/images/utopian-logo.jpg">
+                </div>
+            </a>
+            
+            <a class="red card" href="https://discord.gg/xeSnGc8">
+                <div class="image">
+                <img src="assets/images/add.png">
+                </div>
+            </a>
+            
+        </div>
+  
+    </div>
+  </div>
+  
+  
+  
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">Read our digests</h3>
+      <p>If you want the best from the community, read our hand-picked daily list of the best reports for the day. Our editorial team finds the best content across all curation services for you, so you don't have to..</p>
+      <a class="ui large button">I'm in</a>
+      <h4 class="ui horizontal header divider">
+        <a href="#">Subscribe</a>
+      </h4>
+      <h3 class="ui header">Get it in your inbox</h3>
+      <p>Subscribe to our daily, weekly or monthly email bursts to receive the digests of the finest reports on Steem. It is free; unsubscribe anything.</p>
+      <a class="ui large button">Subscribe!</a>
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="https://github.com/curation-center" class="item">Open source</a>
+            <a href="#" class="item">Project</a>
+            <a href="https://steemit.com/@curation.center" class="item">Read blog</a>
+            <a href="https://discord.gg/xeSnGc8" class="item">Join chat</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Curator</a>
+            <a href="#" class="item">Network</a>
+            <a href="#" class="item">Digests</a>
+            <a href="#" class="item">Docs</a>
+            <a href="#" class="item">Support</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">About us</h4>
+          <p>Steem Curation Center provides software and networking support for curating content on the <a href="https://steem.io">Steem</a> Blockchain.</p>
+          <p>Initially developed at <a href="https://www.peerquery.com">Peer Query</a> with the support of <a href="https://utopian.io">Utopian-io</a> and the Steem community, the project is now maintained by the <a href="https://steem.institute">Steem Institute</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
